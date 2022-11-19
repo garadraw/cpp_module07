@@ -4,7 +4,7 @@ CC = c++
 
 FLAGS = -Werror -Wall -Wextra -std=c++98 -g
 
-SRC = main.cpp Array.tpp
+SRC = main.cpp
 
 RM = rm -f
 
