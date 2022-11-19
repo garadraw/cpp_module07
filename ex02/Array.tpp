@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 14:34:13 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/19 15:08:35 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/19 17:12:06 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ template <typename T>
 Array<T>::Array(): _arr(nullptr), _size(0)
 {
 	std::cout << "Void Constructor called" << std::endl;
-
 }
 
 template <typename T>
