@@ -1,49 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Info.hpp                                           :+:      :+:    :+:   */
+/*   Iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/19 12:32:14 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/19 14:21:47 by vsimeono         ###   ########.fr       */
+/*   Created: 2022/11/19 14:09:59 by vsimeono          #+#    #+#             */
+/*   Updated: 2022/11/19 14:27:42 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef INFO_HPP
-#define INFO_HPP
+#ifndef ITER_HPP
+#define ITER_HPP
 
 #include <iostream>
 
-template< typename T >
-void swap(T &a, T &b)
+template <typename T>
+void iter(T *arr, size_t len, T (*boring)(T))
 {
-	T temp;
-	temp = a;
-	a = b;
-	b = temp;
+	for (size_t i = 0; i < len; i++)
+	{
+		arr[i] = boring(arr[i]);
+	}
 }
 
-template< typename T >
-T	min(T &a, T &b)
+template <typename T>
+T boring(T i)
 {
-	if (a > b)
-		return (a);
-	else if (a < b)
-		return (b);
-	else
-		return(b);
-}
-
-template< typename T >
-T max(T &a, T &b)
-{
-	if (a > b)
-		return (a);
-	else if (a < b)
-		return (b);
-	else
-		return(b);
+	return (i + 1);
 }
 
 #endif
