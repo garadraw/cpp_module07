@@ -6,7 +6,7 @@
 /*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 14:29:52 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/19 15:09:48 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/19 17:05:15 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,19 @@ depending on the software used. With a Popularity Rating of "Low"
 
 #define MAX_VAL 750
 
+#include "Array.tpp"
 #include <iostream>
+#include <exception>
+#include <cstdlib>
 
 template <typename T>
-
 
 class Array
 {
 	private:
 	
-		unsigned int _size;
-		T			*arr;
+		unsigned int 	_size;
+		T				*arr;
 
 	public:
 
@@ -41,7 +43,7 @@ class Array
 		Array(const Array <T> &src);
 		~Array();
 
-		Array &operator=(Array <T> cisnt &src);
+		Array &operator=(Array <T> const &src);
 		T	operator[](unsigned int i);
 		T	const &operator[](unsigned int i) const;
 
@@ -50,7 +52,7 @@ class Array
 			public:
 				virtual const char *what() const throw();
 		};
-		unsigned in size() const;
+		unsigned int size() const;
 };
 
 #endif
