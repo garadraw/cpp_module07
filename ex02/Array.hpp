@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 14:29:52 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/19 17:05:15 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/19 17:52:48 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,18 @@ depending on the software used. With a Popularity Rating of "Low"
 
 #define MAX_VAL 750
 
-#include "Array.tpp"
+
 #include <iostream>
 #include <exception>
 #include <cstdlib>
 
 template <typename T>
-
 class Array
 {
 	private:
 	
 		unsigned int 	_size;
-		T				*arr;
+		T				*_arr;
 
 	public:
 
@@ -54,5 +53,7 @@ class Array
 		};
 		unsigned int size() const;
 };
+
+#include "Array.tpp"
 
 #endif
