@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 14:29:49 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/19 17:58:57 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/19 18:04:52 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,7 @@
 
 int main()
 {
-	int *arr[750];
-	
-	
 	Array<int> numbers(MAX_VAL);
-
-	
 	int *mirror = new int[MAX_VAL];
 	srand(time(NULL));
 	for (int i = 0; i <MAX_VAL; i++)

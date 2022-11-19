@@ -3,29 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 14:34:13 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/19 17:56:24 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/19 18:30:25 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
 template <typename T>
-Array<T>::Array() : _arr(nullptr), _size(0)
+Array<T>::Array() : _arr(NULL), _size(0)
 {
 	std::cout << "Void Constructor called" << std::endl;
 }
 
 template <typename T>
-Array<T>::Array(unsigned int n): _size(n), _arr(nullptr)
+Array<T>::Array(unsigned int n): _size(n), _arr(NULL)
 {
 	this->_arr = new T[n]();
 }
 
 template <typename T>
-Array<T>::Array(const Array<T> &src): _size(src.size()), _arr(nullptr)
+Array<T>::Array(const Array<T> &src): _size(src.size()), _arr(NULL)
 {
 	if (src._size > 0)
 	{
@@ -43,7 +43,7 @@ Array<T> &Array<T>::operator=(const Array<T> &src)
 {
 	if (this->_arr)
 		delete[] this->_arr;
-	this->_arr = nullptr;
+	this->_arr = NULL;
 	if (src.size() > 0)
 	{
 		this->_arr = new T[src._size]();
