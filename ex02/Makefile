@@ -1,4 +1,4 @@
-NAME = Info
+NAME = Array
 
 CC = c++
 

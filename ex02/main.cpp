@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 14:29:49 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/19 19:20:05 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/19 19:38:30 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int main(int, char**)
     }
     try
     {
-        numbers[-2] = 0;
+        numbers[5] = 0;
     }
     catch(const std::exception& e)
     {
@@ -58,6 +58,6 @@ int main(int, char**)
     {
         numbers[i] = rand();
     }
-    delete [] mirror;//
+    delete [] mirror;
     return 0;
 }
